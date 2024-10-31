@@ -1,0 +1,172 @@
+
+#payitlater-logo {
+    float: none;
+}
+
+@media(max-width: 480px){
+
+    #add_payment_method #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li .breakup.payitlater li {
+        width: 100%;
+        margin-bottom: 5px;
+        height: auto;
+        padding: 0;
+    }
+
+    #add_payment_method #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li .payitlater.breakup li .date, .payitlater.breakup li .amount {
+        display:inline-block;
+    }
+
+    .payitlater.breakup {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #payment .payment_methods .payitlater.breakup li {
+            padding: 0 !important;
+    }
+}
+
+.payitlater.breakup {
+    margin-top: 20px;
+}
+
+#payment .payment_methods .payitlater.breakup li {
+        padding: 14px 0 !important;
+
+}
+
+.payitlater.breakup li {
+    display:inline-block;
+    padding: 20px 10px;
+    text-align: center !important;
+    padding-top: 10px;
+    height: 90px;
+    width: 95px;
+    color: #fff;
+    font-size: 12pt;
+    background-color: #387fbc;
+    list-style-type:none;
+    margin-right: 10px !important;
+    border-radius: 3px;
+}
+
+.payitlater.breakup li.second {
+    background-color: #5c9acf;
+}
+
+.payitlater.breakup li.third {
+    background-color: #b0cce3;
+}
+
+.payitlater.breakup li.last {
+    background-color: #def2ff;
+    color: #387fbc;
+}
+.payitlater.breakup li .amount {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.payitlater.breakup li .date {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.payitlater-logo {
+    text-align: left;
+}
+
+.payitlater-wrapper {
+    margin-bottom: 20px
+    padding: 5px;
+    text-align: left;
+    color: #0068b0;
+    position: relative;
+    clear:both;
+}
+
+.payitlater-wrapper .what-is-payitlater {
+    background-color: #1b89e0;
+    color: #fff;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    font-size: 8pt;
+    text-align: center;
+	line-height: 27px;
+	box-shadow: none;
+}
+
+.what-is-payitlater:hover {
+    background-color: #387fbc;
+}
+
+.payitlater-modal-bg {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000001;
+    background: rgba(0,0,0,0.5);
+}
+.payitlater-modal-win {
+    -webkit-box-shadow: -1px 0px 69px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 0px 69px -8px rgba(0, 0, 0, 1);
+    box-shadow: -1px 0px 69px -8px rgba(0, 0, 0, 1);
+
+    width: 410px;
+    height: 534px;
+    margin: 0 auto;
+    position: absolute;
+
+    left:50%;
+    top:50%;
+    margin-left:-205px;
+    margin-top: -267px;
+}
+
+@media(max-width:480px){
+    .payitlater-modal-win {
+        width: 100%;
+        height: auto;
+        top: 5%;
+        left:0;
+        margin:0 !important;
+    }
+}
+
+.payitlater-modal-win img {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    box-shadow: none !important;
+
+}
+
+.payitlater-modal-win .panel-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:#fff;
+    height: 32px;
+}
+
+.payitlater-modal-win .panel-close:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.payitlater-modal-win .panel-close svg {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.payitlater-modal-win .panel-close:hover svg path {
+    stroke: #fff;
+}
